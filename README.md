@@ -1,3 +1,5 @@
+Caro leitor: antes de começar a ler este texto, clique no botão 'RAW' para a formatação aparecer corretamente. Obrigado
+
 Projeto Clima Tempo Simples
 
 Pré-requisitos de instalação para rodar aplicação localmente
