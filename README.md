@@ -27,4 +27,3 @@ Instalação e execução da aplicação
         e substituindo pela string de conexão conforme a configuração do banco na máquina.
         NOTA: se o banco estiver na própria máquina + o nome do banco de dados é ClimaTempoSimples + a autenticação do banco de dados for integrada, não é necessário realizar este passo!
  7 - Compilar e rodar a aplicação (CTRL + F5)
-     
