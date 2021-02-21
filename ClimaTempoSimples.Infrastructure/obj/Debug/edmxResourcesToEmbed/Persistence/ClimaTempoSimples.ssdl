@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="ClimaTempoSimplesModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Cidade">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" />
+    <Property Name="Nome" Type="nvarchar" MaxLength="200" Nullable="false" />
+    <Property Name="EstadoId" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Estado">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" />
+    <Property Name="Nome" Type="nvarchar" MaxLength="200" Nullable="false" />
+    <Property Name="UF" Type="nvarchar" MaxLength="2" Nullable="false" />
+  </EntityType>
+  <EntityType Name="PrevisaoClima">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="CidadeId" Type="int" Nullable="false" />
+    <Property Name="DataPrevisao" Type="date" Nullable="false" />
+    <Property Name="Clima" Type="nvarchar" MaxLength="15" Nullable="false" />
+    <Property Name="TemperaturaMinima" Type="numeric" Precision="3" Scale="1" />
+    <Property Name="TemperaturaMaxima" Type="numeric" Precision="3" Scale="1" />
+  </EntityType>
+  <Association Name="fk_cidade_estado">
+    <End Role="Estado" Type="Self.Estado" Multiplicity="1" />
+    <End Role="Cidade" Type="Self.Cidade" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Estado">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Cidade">
+        <PropertyRef Name="EstadoId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_previsao_cidade">
+    <End Role="Cidade" Type="Self.Cidade" Multiplicity="1" />
+    <End Role="PrevisaoClima" Type="Self.PrevisaoClima" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Cidade">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="PrevisaoClima">
+        <PropertyRef Name="CidadeId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="ClimaTempoSimplesModelStoreContainer">
+    <EntitySet Name="Cidade" EntityType="Self.Cidade" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Estado" EntityType="Self.Estado" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="PrevisaoClima" EntityType="Self.PrevisaoClima" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="fk_cidade_estado" Association="Self.fk_cidade_estado">
+      <End Role="Estado" EntitySet="Estado" />
+      <End Role="Cidade" EntitySet="Cidade" />
+    </AssociationSet>
+    <AssociationSet Name="fk_previsao_cidade" Association="Self.fk_previsao_cidade">
+      <End Role="Cidade" EntitySet="Cidade" />
+      <End Role="PrevisaoClima" EntitySet="PrevisaoClima" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

@@ -1,0 +1,17 @@
+E:\Codebase\_.NET Solutions\4.7.x\ClimaTempoSimples\ClimaTempoSimples.Infrastructure\bin\Debug\ClimaTempoSimples.Infrastructure.dll
+E:\Codebase\_.NET Solutions\4.7.x\ClimaTempoSimples\ClimaTempoSimples.Infrastructure\bin\Debug\ClimaTempoSimples.Infrastructure.pdb
+E:\Codebase\_.NET Solutions\4.7.x\ClimaTempoSimples\ClimaTempoSimples.Infrastructure\bin\Debug\ClimaTempoSimples.Application.dll
+E:\Codebase\_.NET Solutions\4.7.x\ClimaTempoSimples\ClimaTempoSimples.Infrastructure\bin\Debug\EntityFramework.dll
+E:\Codebase\_.NET Solutions\4.7.x\ClimaTempoSimples\ClimaTempoSimples.Infrastructure\bin\Debug\EntityFramework.SqlServer.dll
+E:\Codebase\_.NET Solutions\4.7.x\ClimaTempoSimples\ClimaTempoSimples.Infrastructure\bin\Debug\MediatR.dll
+E:\Codebase\_.NET Solutions\4.7.x\ClimaTempoSimples\ClimaTempoSimples.Infrastructure\bin\Debug\FluentValidation.dll
+E:\Codebase\_.NET Solutions\4.7.x\ClimaTempoSimples\ClimaTempoSimples.Infrastructure\bin\Debug\ClimaTempoSimples.Application.pdb
+E:\Codebase\_.NET Solutions\4.7.x\ClimaTempoSimples\ClimaTempoSimples.Infrastructure\bin\Debug\EntityFramework.xml
+E:\Codebase\_.NET Solutions\4.7.x\ClimaTempoSimples\ClimaTempoSimples.Infrastructure\bin\Debug\EntityFramework.SqlServer.xml
+E:\Codebase\_.NET Solutions\4.7.x\ClimaTempoSimples\ClimaTempoSimples.Infrastructure\bin\Debug\MediatR.xml
+E:\Codebase\_.NET Solutions\4.7.x\ClimaTempoSimples\ClimaTempoSimples.Infrastructure\bin\Debug\FluentValidation.xml
+E:\Codebase\_.NET Solutions\4.7.x\ClimaTempoSimples\ClimaTempoSimples.Infrastructure\obj\Debug\ClimaTempoSimples.Infrastructure.csprojAssemblyReference.cache
+E:\Codebase\_.NET Solutions\4.7.x\ClimaTempoSimples\ClimaTempoSimples.Infrastructure\obj\Debug\ClimaTempoSimples.Infrastructure.csproj.CoreCompileInputs.cache
+E:\Codebase\_.NET Solutions\4.7.x\ClimaTempoSimples\ClimaTempoSimples.Infrastructure\obj\Debug\ClimaTempoSimples.Infrastructure.csproj.CopyComplete
+E:\Codebase\_.NET Solutions\4.7.x\ClimaTempoSimples\ClimaTempoSimples.Infrastructure\obj\Debug\ClimaTempoSimples.Infrastructure.dll
+E:\Codebase\_.NET Solutions\4.7.x\ClimaTempoSimples\ClimaTempoSimples.Infrastructure\obj\Debug\ClimaTempoSimples.Infrastructure.pdb
