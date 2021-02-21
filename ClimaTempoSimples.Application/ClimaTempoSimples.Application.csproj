@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{18E2C85D-8875-4C41-993D-966A4C737708}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ClimaTempoSimples.Application</RootNamespace>
+    <AssemblyName>ClimaTempoSimples.Application</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="FluentValidation, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7de548da2fbae0f0, processorArchitecture=MSIL">
+      <HintPath>..\packages\FluentValidation.9.5.1\lib\net461\FluentValidation.dll</HintPath>
+    </Reference>
+    <Reference Include="MediatR, Version=9.0.0.0, Culture=neutral, PublicKeyToken=bb9a41a5e8aaa7e2, processorArchitecture=MSIL">
+      <HintPath>..\packages\MediatR.9.0.0\lib\net461\MediatR.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Common\PaginationArgs.cs" />
+    <Compile Include="Common\Validation\ValidationBehavior.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Queries\Interfaces\IWeatherForecastRepository.cs" />
+    <Compile Include="Queries\ListCitiesWithForecasts\ListCitiesWithForecastsDto.cs" />
+    <Compile Include="Queries\ListCitiesWithForecasts\ListCitiesWithForecastsHandler.cs" />
+    <Compile Include="Queries\ListCitiesWithForecasts\ListCitiesWithForecastsRequest.cs" />
+    <Compile Include="Queries\ListCitiesWithForecasts\ListCitiesWithForecastsRequestValidator.cs" />
+    <Compile Include="Queries\ListCitiesWithForecasts\ListCitiesWithForecastsResponse.cs" />
+    <Compile Include="Queries\ListTodaysTopColdestCities\ListTodaysTopColdestCitiesHandler.cs" />
+    <Compile Include="Queries\ListTodaysTopColdestCities\ListTodaysTopColdestCitiesResponse.cs" />
+    <Compile Include="Queries\ListTodaysTopColdestCities\ListTodaysTopColdestCitiesRequest.cs" />
+    <Compile Include="Queries\ListTodaysTopColdestCities\ListTodaysTopColdestCitiesDto.cs" />
+    <Compile Include="Queries\ListTodaysTopColdestCities\ListTodaysTopColdestCitiesRequestValidator.cs" />
+    <Compile Include="Queries\ListTodaysTopHottestCities\ListTodaysTopHottestCitiesHandler.cs" />
+    <Compile Include="Queries\ListTodaysTopHottestCities\ListTodaysTopHottestCitiesDto.cs" />
+    <Compile Include="Queries\ListTodaysTopHottestCities\ListTodaysTopHottestCitiesRequest.cs" />
+    <Compile Include="Queries\ListTodaysTopHottestCities\ListTodaysTopHottestCitiesResponse.cs" />
+    <Compile Include="Queries\ListTodaysTopHottestCities\ListTodaysTopHottestCitiesRequestValidator.cs" />
+    <Compile Include="Queries\SearchWeatherForecastForNextDaysByCity\SearchWeatherForecastForNextDaysByCityHandler.cs" />
+    <Compile Include="Queries\SearchWeatherForecastForNextDaysByCity\SearchWeatherForecastForNextDaysByCityRequest.cs" />
+    <Compile Include="Queries\SearchWeatherForecastForNextDaysByCity\SearchWeatherForecastForNextDaysByCityDto.cs" />
+    <Compile Include="Queries\SearchWeatherForecastForNextDaysByCity\SearchWeatherForecastForNextDaysByCityRequestValidator.cs" />
+    <Compile Include="Queries\SearchWeatherForecastForNextDaysByCity\SearchWeatherForecastForNextDaysByCityResponse.cs" />
+    <Compile Include="Utilities\DateTimeUtilities.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

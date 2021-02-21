@@ -1,0 +1,9 @@
+(Partial Views asynchronous loading issue)
+https://blog.michaelckennedy.net/2012/11/13/improve-perceived-performance-of-asp-net-mvc-websites-with-async-partialviews/
+https://github.com/mikeckennedy/improve-mvc-perf-with-async-views/blob/master/src/SampleAsyncPartialViews/JS/site.js
+
+(Entity Framework DateTime.Now.Date use issue)
+https://stackoverflow.com/questions/14601676/the-specified-type-member-date-is-not-supported-in-linq-to-entities-only-init
+
+(Simple Injector + MediatR + FlunentValidation dependencies container configuration issues)
+https://github.com/jbogard/MediatR/blob/master/samples/MediatR.Examples.SimpleInjector/Program.cs

@@ -1,0 +1,60 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31005.135
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClimaTempoSimples", "ClimaTempoSimples\ClimaTempoSimples.csproj", "{F893181C-51A5-4331-B1A6-559262F7652E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{86084AC9-D94F-4E3C-83B9-72A556DB249B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "presentation", "presentation", "{AC6845BC-C57F-481D-87A2-CA5AA912F797}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "application", "application", "{3107D1F2-8C97-45AB-A98B-5B200D751676}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "infrastructure", "infrastructure", "{95553E52-36D0-47F9-AFB2-01CA23F3C95A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClimaTempoSimples.Application", "ClimaTempoSimples.Application\ClimaTempoSimples.Application.csproj", "{18E2C85D-8875-4C41-993D-966A4C737708}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClimaTempoSimples.Infrastructure", "ClimaTempoSimples.Infrastructure\ClimaTempoSimples.Infrastructure.csproj", "{2DCC8CC6-9902-441E-B0FF-D4D862E7E7C6}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "docs", "docs", "{0F9DE63C-1D1C-4D52-A59B-7B540535C338}"
+	ProjectSection(SolutionItems) = preProject
+		Sistema de Consulta de Clima.pdf = Sistema de Consulta de Clima.pdf
+		sistema_consulta_clima.sql = sistema_consulta_clima.sql
+		Support urls.txt = Support urls.txt
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F893181C-51A5-4331-B1A6-559262F7652E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F893181C-51A5-4331-B1A6-559262F7652E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F893181C-51A5-4331-B1A6-559262F7652E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F893181C-51A5-4331-B1A6-559262F7652E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{18E2C85D-8875-4C41-993D-966A4C737708}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{18E2C85D-8875-4C41-993D-966A4C737708}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{18E2C85D-8875-4C41-993D-966A4C737708}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{18E2C85D-8875-4C41-993D-966A4C737708}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2DCC8CC6-9902-441E-B0FF-D4D862E7E7C6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2DCC8CC6-9902-441E-B0FF-D4D862E7E7C6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2DCC8CC6-9902-441E-B0FF-D4D862E7E7C6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2DCC8CC6-9902-441E-B0FF-D4D862E7E7C6}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{F893181C-51A5-4331-B1A6-559262F7652E} = {AC6845BC-C57F-481D-87A2-CA5AA912F797}
+		{AC6845BC-C57F-481D-87A2-CA5AA912F797} = {86084AC9-D94F-4E3C-83B9-72A556DB249B}
+		{3107D1F2-8C97-45AB-A98B-5B200D751676} = {86084AC9-D94F-4E3C-83B9-72A556DB249B}
+		{95553E52-36D0-47F9-AFB2-01CA23F3C95A} = {86084AC9-D94F-4E3C-83B9-72A556DB249B}
+		{18E2C85D-8875-4C41-993D-966A4C737708} = {3107D1F2-8C97-45AB-A98B-5B200D751676}
+		{2DCC8CC6-9902-441E-B0FF-D4D862E7E7C6} = {95553E52-36D0-47F9-AFB2-01CA23F3C95A}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B958D205-20B7-4D47-BE5C-85B30BEDD74F}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,43 @@
+﻿@model ListCitiesWithForecastsResponse
+<link rel="stylesheet" href="~/Scripts/chosen/chosen.min.css" />
+
+<div>
+    <div>
+        <select id="city">
+            @foreach (var dataGroup in Model.GroupedCitiesWithForecasts)
+            {
+                <optgroup label="@dataGroup.Key">@dataGroup.Key</optgroup>
+                foreach (var data in dataGroup.Value)
+                {
+                <option value="@data.City">@data.City</option>
+                }
+            }
+        </select>
+        <button class="btn btn-primary" type="button" id="searchWeatherByCity">Buscar</button>
+    </div>
+    <h4>
+        <label class="hidden" id="weatherSearchTitle">Clima nos próximos 7 dias para</label>
+        <label id="lblSelectedCity"></label>
+    </h4>
+    <div id="weatherForecastsContainer">
+        <ul class="list-group card-template hidden">
+            <li class="card-title list-group-item list-group-item-success">
+                <div class="weather-forecast-date"></div>
+                <div class="weather-forecast-weekday"></div>
+            </li>
+            <li class="card-content list-group-item text-center">
+                <div class="weather-forecast-text text-capitalize"></div>
+                <div class="weather-forecast">Mínima:<span class="min-temperature"></span>°</div>
+                <div class="weather-forecast">Máxima:<span class="max-temperature"></span>°</div>
+            </li>
+        </ul>
+    </div>
+</div>
+
+<link href="~/Content/select2/select2.min.css" rel="stylesheet" />
+<link href="~/Content/search-weather-forecast.css" rel="stylesheet" />
+<script src="~/Scripts/select2/select2.full.min.js"></script>
+<script type="text/javascript">
+    var weatherForecastSearchUrl = '@Url.Action("SearchWeatherForecastForNextDaysByCity", "SearchWeatherForecastForNextDaysByCity")'
+</script>
+<script src="~/Scripts/search-weather-forecast.js"></script>

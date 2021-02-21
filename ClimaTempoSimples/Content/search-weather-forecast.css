@@ -1,0 +1,9 @@
+﻿#weatherForecastsContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+    #weatherForecastsContainer li {
+        margin-right: 2px;
+    }

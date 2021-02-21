@@ -1,0 +1,16 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+<div class="row">
+    <div class="col-md-6 weatherWidget" data-url="@Url.Action("TodaysTopHottestCities","ListTodaysTopHottestCities")">
+        Carregando...
+    </div>
+    <div class="col-md-6 weatherWidget" data-url="@Url.Action("TodaysTopColdestCities","ListTodaysTopColdestCities")">
+        Carregando...
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-12 weatherWidget" data-url="@Url.Action("ListCitiesWithForecasts","SearchWeatherForecastForNextDaysByCity")">
+        Carregando...
+    </div>
+</div>

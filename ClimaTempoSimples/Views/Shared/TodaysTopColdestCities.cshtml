@@ -1,0 +1,12 @@
+﻿@model ListTodaysTopColdestCitiesResponse
+
+<ul class="list-group">
+    <li class="list-group-item list-group-item-info">Cidades mais frias hoje</li>
+    @foreach(var item in Model.TopColdestCities)
+    {
+    <li class="list-group-item">
+        <label class="pull-left">@item.City/@item.State</label><label class="pull-right">@item.MaxTemperature°</label>
+        <br class="clearfix" />
+    </li>
+    }
+</ul>
