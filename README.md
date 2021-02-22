@@ -1,4 +1,5 @@
-Caro leitor: antes de começar a ler este texto, clique no botão 'RAW' para a formatação aparecer corretamente. Obrigado
+Caro leitor: este texto poderá apresentar problemas de formatação por problemas encontrados no editor de texto desta plataforma, dificultando sua leitura. 
+A fim de garantir a legibilidade do mesmo, clique no arquivo readme.md mais acima e, em seguida, clique no botão 'RAW', no canto superior direito da área de texto.
 
 Projeto Clima Tempo Simples
 
