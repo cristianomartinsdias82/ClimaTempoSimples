@@ -2,12 +2,9 @@
 
 namespace ClimaTempoSimples.Controllers
 {
-    public class HomeController : ClimaTempoSimplesController
+    public class HomeController : Controller
     {
-        public ActionResult Index()
-        {
-            return View();
-        }
+        public ActionResult Index() => View();
 
         public ActionResult About()
         {
@@ -22,5 +19,7 @@ namespace ClimaTempoSimples.Controllers
 
             return View();
         }
+
+        public ActionResult Error() => View();
     }
 }

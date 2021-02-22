@@ -170,12 +170,12 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
-    <Compile Include="Controllers\ClimaTempoSimplesController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="App_Start\DependencyContainerConfig.cs" />
     <Compile Include="Controllers\ListTodaysTopColdestCitiesController.cs" />
     <Compile Include="Controllers\ListTodaysTopHottestCitiesController.cs" />
     <Compile Include="Controllers\SearchWeatherForecastForNextDaysByCityController.cs" />
+    <Compile Include="Filters\ExceptionGlobalHandlingFilter.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>

@@ -1,4 +1,4 @@
-﻿using System.Web;
+﻿using ClimaTempoSimples.Filters;
 using System.Web.Mvc;
 
 namespace ClimaTempoSimples
@@ -7,7 +7,7 @@ namespace ClimaTempoSimples
     {
         public static void RegisterGlobalFilters(GlobalFilterCollection filters)
         {
-            filters.Add(new HandleErrorAttribute());
+            filters.Add(new ExceptionGlobalHandlingFilter());
         }
     }
 }

@@ -8,7 +8,7 @@ using System.Web.Mvc;
 
 namespace ClimaTempoSimples.Controllers
 {
-    public class ListTodaysTopHottestCitiesController : ClimaTempoSimplesController
+    public class ListTodaysTopHottestCitiesController : Controller
     {
         private readonly IMediator _mediator;
 

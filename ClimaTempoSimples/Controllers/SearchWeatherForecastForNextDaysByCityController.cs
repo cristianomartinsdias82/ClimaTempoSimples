@@ -9,7 +9,7 @@ using System.Web.Mvc;
 
 namespace ClimaTempoSimples.Controllers
 {
-    public class SearchWeatherForecastForNextDaysByCityController : ClimaTempoSimplesController
+    public class SearchWeatherForecastForNextDaysByCityController : Controller
     {
         private readonly IMediator _mediator;
 
