@@ -7,7 +7,7 @@ Pré-requisitos de instalação para rodar aplicação localmente
  - Visual Studio 2017 ou posterior com .Net Framework 4.7.2
  - Sql Server Express 2014 ou posterior
  - Git
- - Opcional: Sql Management Studio
+ - Opcional: Microsoft Sql Server Management Studio
  
 Instalação e execução da aplicação
  1 - Baixar uma cópia da solução
